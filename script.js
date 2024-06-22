@@ -18,12 +18,13 @@ const suffix = {
 let GO = false
 GO = confirm("Generate A Bussiness Name");
 
-let num1 = Math.floor(Math.random()*3)
-let num2 = Math.floor(Math.random()*3)
-let num3 = Math.floor(Math.random()*3)
-
 while(GO=true){
+    let num1 = Math.floor(Math.random()*3)+1;
+    let num2 = Math.floor(Math.random()*3)+1;
+    let num3 = Math.floor(Math.random()*3)+1;
     alert(adj[num1] + " " + shop_name[num2] + " " + suffix[num3])
+    GO = confirm("Generate A Bussiness Name");
+
 }
 
 alert("program end..")
